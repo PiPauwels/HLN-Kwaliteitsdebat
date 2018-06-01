@@ -17,4 +17,8 @@ Naast één van de hierboven vermelde browsers moet je eerst en vooral de plugin
 
 ### Installatie
 
+Ga naar [HLN Kwaliteitsdebat op Greasy Fork](https://greasyfork.org/en/scripts/368845-hln-kwaliteitsdebat) en klik op de groene knop "Install this script".
 
+U krijgt vervolgens het script te zien in de extensie van uw browser. Klik daar nogmaals op de knop "Install" om het script te installeren.
+
+Klaar. Geniet nóg meer van het kwaliteitsdebat dan ooit tevoren!
