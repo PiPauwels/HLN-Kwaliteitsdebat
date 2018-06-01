@@ -5,7 +5,7 @@
 // @grant    GM_addStyle
 // ==/UserScript==
 
-var nbComments = 42;
+var nbComments = 43;
 
 function replaceComments (jNode)
 {
@@ -55,6 +55,7 @@ function replaceComments (jNode)
         case 39: comment = "Met de grovve borstel er door enbuiten kieper en."; break;
         case 40: comment = "Wie met water in de kelder zit met ratten op zolder."; break;
         case 41: comment = "Buddel buddel buddel buddel buddel buddel buddel buddel buddel buddel buddel buddel buddel buddel buddel buddel buddel buddel buddel buddel buddel buddel buddel buddel buddel buddel!"; break;
+        case 42: comment = "De natie moet splitsen in de confederatsie gedaan met melk en honing naar het Zuiden sturen"; break;
     }
 
     jNode.html(comment);
