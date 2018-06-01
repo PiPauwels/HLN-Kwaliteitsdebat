@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name     HLN Kwaliteitsdebat
-// @include  https://www.hln.be/*
+// @include  https://*.hln.be/*
 // @require  http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
 // @grant    GM_addStyle
 // ==/UserScript==
@@ -159,6 +159,8 @@ function waitForKeyElements (selectorTxt, actionFunction, bWaitOnce, iframeSelec
 
 var commentIndex = 0;
 var commentNumbers = [];
+var commentPar = "p.comment__body";
 Randoms(nbComments, 0, nbComments);
 replaceAuthor();
-waitForKeyElements ("p.comment__body", replaceComments);
+if (window.location.hostname == "m.hln.be") commentPar = "p.comment__message";
+waitForKeyElements (commentPar, replaceComments);

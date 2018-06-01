@@ -22,3 +22,7 @@ Ga naar [HLN Kwaliteitsdebat op Greasy Fork](https://greasyfork.org/en/scripts/3
 U krijgt vervolgens het script te zien in de extensie van uw browser. Klik daar nogmaals op de knop "Install" om het script te installeren.
 
 Klaar. Geniet nóg meer van het kwaliteitsdebat dan ooit tevoren!
+
+## Mobiel
+
+User scripts worden enkel ondersteund door Mozilla Firefox. Installeer hiertoe de addon [UIS (Unified Script Injector](https://addons.mozilla.org/nl/firefox/addon/userunified-script-injector/) op uw smartphone en volg daarna de hierboven beschreven installatieprocedure.
