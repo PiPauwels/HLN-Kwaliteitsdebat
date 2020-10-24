@@ -14,7 +14,7 @@ function replaceComments (jNode)
     switch (commentNumbers[commentIndex])
     {
         case 0: comment = "Wop wop wop wop wobbeldebob."; break;
-        case 1: comment = "Dibbel dibbel drabbel drommel"; break;
+        case 1: comment = "Dibbel dibbel drabbel drammel"; break;
         case 2: comment = "Boeboboeboboeboboebobbobobobobobob!"; break;
         case 3: comment = "Derp derp derp durp do buddel bum bum bum."; break;
         case 4: comment = "Wobbel!"; break;
