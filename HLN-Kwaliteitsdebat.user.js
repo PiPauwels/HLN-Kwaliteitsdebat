@@ -1,8 +1,14 @@
 // ==UserScript==
 // @name     HLN Kwaliteitsdebat
 // @include  https://*.hln.be/*
-// @require  http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
+// @require  https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
+// @icon     https://www.google.com/s2/favicons?sz=64&domain=hln.be
 // @grant    GM_addStyle
+// @version 0.0.1.20201024224408
+// @namespace https://greasyfork.org/users/188872
+// @description Script dat de Kwaliteit (met hoofdletter 'K') voorop plaatst in de commentaren op de website van de Belgische krant "Het Laatste Nieuws".
+// @downloadURL https://update.greasyfork.org/scripts/368845/HLN%20Kwaliteitsdebat.user.js
+// @updateURL https://update.greasyfork.org/scripts/368845/HLN%20Kwaliteitsdebat.meta.js
 // ==/UserScript==
 
 var nbComments = 43;
@@ -64,7 +70,7 @@ function replaceComments (jNode)
 
 function replaceAuthor ()
 {
-    var authors = document.getElementsByClassName("comment__author");
+    var authors = document.getElementsByClassName("comments__list-item__author");
     if (authors.length > 0) authors[authors.length-1].innerHTML = "JAAK VAN DE VIJVER";
 }
 
@@ -159,8 +165,8 @@ function waitForKeyElements (selectorTxt, actionFunction, bWaitOnce, iframeSelec
 
 var commentIndex = 0;
 var commentNumbers = [];
-var commentPar = "p.comment__body";
+var commentPar = "div.comments__list-item__body";
 Randoms(nbComments, 0, nbComments);
 replaceAuthor();
-if (window.location.hostname == "m.hln.be") commentPar = "p.comment__message";
+//if (window.location.hostname == "m.hln.be") commentPar = "p.comment__message";
 waitForKeyElements (commentPar, replaceComments);
